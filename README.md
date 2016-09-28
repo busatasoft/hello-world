@@ -1,2 +1,3 @@
 # hello-world
-The practice repository.
+
+This is the repository for practice.
