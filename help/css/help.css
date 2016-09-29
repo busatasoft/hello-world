@@ -1,0 +1,148 @@
+/* ページ背景 */
+body {
+    background: linen;
+    font-family:
+        'Lucida Grande',
+        'Hiragino Kaku Gothic ProN',
+        Meiryo,
+        sans-serif;
+}
+
+/* レイアウト領域全体 */
+.dock-layout {
+    color: forestgreen;
+    padding: 1em;
+}
+
+/* ヘッダー */
+#header {
+}
+.page-title {
+    font-size: 2em;
+}
+
+/* ナビゲーション（左） */
+#navigation {
+    float: left; 
+    width: 18em;
+}
+
+/* メインコンテンツ（追従＝右） */
+#contents {
+    margin-left: 18em;
+    padding-bottom: 3em;
+}
+
+/* ナビゲーションリンク */
+#section-link-list {
+    counter-reset: section-number;
+    list-style: none;
+    padding-left: 1em;
+}
+#section-link-list li {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 90%;
+
+    padding-bottom: .15em;
+    border-bottom: 2px solid forestgreen;
+    margin-bottom: .7em;
+}
+#section-link-list li:before {
+    display: inline-block;
+    text-align: center;
+    background: lightsteelblue;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+
+    counter-increment: section-number;
+    content: counter(section-number);
+    color: lavender;
+    font-weight: bold;
+
+    margin-right: .5em;
+}
+li.selected:before {
+    background: limegreen !important;
+}
+
+.section-link {
+    color: forestgreen;
+    font-weight: bold;
+    text-decoration: none;
+}
+.section-link:hover {
+    font-size: 110%;
+}
+
+/* セクション（内部ページ） */
+.section-item {
+}
+.section-title {
+    font-size: 1.5em;
+    padding-left: .3em;
+    border-left: .2em solid forestgreen;
+}
+
+/* サブセクション */
+.subitem {
+}
+.subsection-title {
+    font-size: 1em;
+}
+.subitem:not(:last-child) {
+    margin-bottom: 3em;
+}
+
+/* プロパティ表 */
+.properties {
+    margin-top: 2em;
+}
+.properties-table {
+    caption-side: top;
+    margin: auto;
+}
+.properties-table th {
+    width: 12em;
+    text-align: right;
+    padding: .2em .5em;
+}
+.properties-table td {
+    width: 36em;
+    text-align: left;
+    padding: .2em .5em;
+}
+.properties-table tr:nth-child(even) {
+    background: paleturquoise;
+}
+.properties-table,
+.properties-table th,
+.properties-table td {
+    border: thin solid forestgreen;
+    border-collapse: collapse;
+}
+.properties-title {
+    font-size: small;
+    font-weight: bold;
+}
+
+/* 本文 */
+p.text {
+    text-indent: 1em;
+}
+
+/* 画像 */
+img {
+    width: 100%;
+}
+
+/* フッター */
+#footer {
+    position: relative;
+}
+.copyright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
