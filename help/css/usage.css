@@ -15,7 +15,7 @@ body {
 }
 
 /* ヘッダー */
-#header {
+.page-header {
 }
 .page-title {
     font-size: 2em;
@@ -79,6 +79,8 @@ li.selected:before {
 /* セクション（内部ページ） */
 .section-item {
 }
+.section-header {
+}
 .section-title {
     font-size: 1.5em;
     padding-left: .3em;
@@ -97,44 +99,31 @@ li.selected:before {
 
 /* プロパティ表 */
 .properties {
-    margin-top: 2em;
-}
-.properties-table {
     caption-side: top;
-    margin: auto;
+    margin: 2em auto 0 auto;
 }
-.properties-table th {
+.properties tr:nth-child(even) {
+    background: paleturquoise;
+}
+.properties th {
     width: 12em;
     text-align: right;
     padding: .2em .5em;
 }
-.properties-table td {
+.properties td {
     width: 36em;
     text-align: left;
     padding: .2em .5em;
 }
-.properties-table tr:nth-child(even) {
-    background: paleturquoise;
-}
-.properties-table,
-.properties-table th,
-.properties-table td {
+.properties,
+.properties th,
+.properties td {
     border: thin solid forestgreen;
     border-collapse: collapse;
 }
 .properties-title {
     font-size: small;
     font-weight: bold;
-}
-
-/* 本文 */
-p.text {
-    text-indent: 1em;
-}
-
-/* 画像 */
-img {
-    width: 100%;
 }
 
 /* フッター */
@@ -146,3 +135,40 @@ img {
     right: 0;
     bottom: 0;
 }
+
+/* 本文 */
+p.text {
+    text-indent: 1em;
+}
+
+/* 画像 */
+img {
+    width: 100%;
+}
+.image {
+    max-width: 95%;
+    margin: 0 auto;
+}
+.small-image {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* 強調 */
+.keyword,
+.path,
+.shortcut-key {
+    background: gray;
+    color: white;
+    font-size: 90%;
+    padding: 0 0.25em;
+    border-radius: 0.25em;
+    margin: 0 0.25em;
+}
+
+/* 注意書き */
+.caution {
+    color: crimson;
+    font-size: small; 
+}
+

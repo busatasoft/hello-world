@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>カルイカネの使い方</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="css/usage.css"/>
+    </head>
+    <body>
+        <div class="dock-layout">
+            <header class="page-header">
+                <h1 class="page-title">カルイカネの使い方</h1>
+            </header>
+            <nav id="navigation">
+                <ol id="section-link-list">
+                    <li class="list01"><a href="#section01" class="section-link">概要</a></li>
+                    <li class="list02"><a href="#section02" class="section-link">基本画面</a></li>
+                    <li class="list03"><a href="#section03" class="section-link">アイテムを作る</a></li>
+                    <li class="list04"><a href="#section04" class="section-link">テンプレートを使う</a></li>
+                    <li class="list05"><a href="#section05" class="section-link">文書のエクスポート</a></li>
+                    <li class="list06"><a href="#section06" class="section-link">マクロを使う</a></li>
+                    <li class="list07"><a href="#section07" class="section-link">カルイカネの設定</a></li>
+                    <li class="list08"><a href="#section08" class="section-link">Tips</a></li>
+                </ol>
+            </nav>
+            <div id="contents">
+                <section id="section01" class="section-item">
+                    <header class="section-header">
+                        <h2 class="section-title">概要</h2>
+                    </header>
+                    <p class="text">
+                        カルイカネはアウトラインプロセッサー、Outlinerまたはアイデアプロセッサ―などと呼ばれる
+                        あなたのアイデアを構造的に記録・管理するためのソフトウェアです。</p>
+                    <p class="text">
+                        また、カルイカネはTypeScript（あるいはJavaScript）を通じて自動化、
+                        文書変換などの処理を記述できるため、ユーザーが独自に機能を拡張できます。
+                    </p>
+                    <table class="properties">
+                        <caption class="properties-title">
+                            ソフトウェア基本情報
+                        </caption>
+                        <tr>
+                            <th scope="row">名称</th>
+                            <td>カルイカネ</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">最新版</th>
+                            <td>${version}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">種別</th>
+                            <td>アウトラインプロセッサー, Outliner</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">作者</th>
+                            <td>
+                                <div>
+                                    <span class="name">奥村境太</span>
+                                    <span class="email">(email: keita.o.w@gmail.com)</span>
+                                </div>
+                                <div>
+                                    <span><a target="_blank" href="http://busatasoft.net/">busatasoft</a></span>
+                                    <span>(http://busatasoft.net/)</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Webサイト</th>
+                            <td>
+                                <div>
+                                    <span><a target="_blank" href="http://hello-world.busatasoft.net/">カルイカネ公式</a></span>
+                                    <span>(http://hello-world.busatasoft.net/)</span>
+                                </div>
+                                <div>
+                                    <span><a target="_blank" href="https://github.com/busatasoft/hello-world/">GitHub</a></span>
+                                    <span>(https://github.com/busatasoft/hello-world/)</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">動作環境</th>
+                            <td>
+                                <div>
+                                    <span>インストーラー版</span>
+                                    <span>Windows Vista SP2以降</span>
+                                </div>
+                                <div>
+                                    <span>Java版</span>
+                                    <span>JRE/JDK 8u40以降</span>
+                                    <span class="caution">最新版推奨</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section id="section02" class="section-item">
+                    <header class="section-header">
+                        <h2 class="section-title">基本画面</h2>
+                    </header>
+                    <section id="mainwindow-overview" class="subitem">
+                        <header>
+                            <h3 class="subsection-title">メイン画面</h3>
+                        </header>
+                        <div class="image">
+                            <p>
+                                <img data-original="img/main-window.png" alt="メイン画面"/>
+                            </p>
+                        </div>
+                        <p class="text">
+                            カルイカネのメイン画面です。操作のほとんどはこの画面を通して行います。
+                        </p>
+                        <table class="properties">
+                            <caption class="properties-title">
+                                コントロール概要
+                            </caption>
+                            <tr>
+                                <th scope="row">アイテムツリー</th>
+                                <td>アイテム（管理項目）の階層構造を表示します。ドラッグアンドドロップ操作を受け付けます。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">アイテムタイトル</th>
+                                <td>アイテムのタイトルを表示・編集します。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">本文</th>
+                                <td>アイテムの本文を表示・編集します。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">汎用領域</th>
+                                <td>アイテムまたはカルイカネ本体の補助機能のために汎用的に使われます。</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="subitem">
+                        <header>
+                            <h3 class="subsection-title">汎用領域／属性ビュー</h3>
+                        </header>
+                        <div class="image">
+                            <p>
+                                <img data-original="img/attributes-vew.png" alt="汎用領域／属性ビュー"/>
+                            </p>
+                        </div>
+                        <p class="text">
+                            アイテムに付随するクラス情報、属性情報を表示・編集します。
+                            これらをどう使うかはユーザー次第で、全く使わないこともまた自由です。
+                        </p>
+                        <table class="properties">
+                            <caption class="properties-title">
+                                コントロール概要
+                            </caption>
+                            <tr>
+                                <th scope="row">属性リスト</th>
+                                <td>アイテムに紐づく属性情報を表示・編集します。入力可能な項目はクラス定義から取得されます。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">クラスリスト</th>
+                                <td>アイテムに紐づくクラス情報を表示・編集します。クラスは主にアイテム種別を表現するために使います。</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="subitem">
+                        <header>
+                            <h3 class="subsection-title">汎用領域／出力ビュー</h3>
+                        </header>
+                        <div class="image">
+                            <p>
+                                <img data-original="img/output-view.png" alt="汎用領域／出力ビュー"/>
+                            </p>
+                        </div>
+                        <p class="text">
+                            主にスクリプトの実行状況などが表示されます。読み取り専用です。
+                        </p>
+                    </section>
+                </section>
+                <section id="section03" class="section-item">
+                    <header class="section-header">
+                        <h2 class="section-title">アイテムを作る</h2>
+                    </header>
+                    <section class="subitem">
+                        <header>
+                            <h3 class="subsection-title">はじめに</h3>
+                        </header>
+                        <p class="text">
+                            カルイカネはあなたのアイデアを構造化して管理するソフトウェアです。
+                            しかし最初からどのように管理するかに頭を悩ませる必要はありません。
+                            おもむろに書き留めたいことを列挙して後から構造化しても構いません。
+                        </p>
+                        <p class="text">
+                            このセクションではカルイカネの活用法の例を提示します。
+                            しかし、必ずしもその方法に倣う必要はありません。
+                            カルイカネを使用していく中であなたなりのスタイルを確立してください。
+                        </p>
+                    </section>
+                    <section class="subitem">
+                        <header>
+                            <h3 class="subsection-title">ざっくりと構造化</h3>
+                        </header>
+                        <p class="text">
+                            カルイカネを最初に起動した時、アイテムツリーには新規アイテムというタイトルの付いたアイテムがひとつあります。
+                            このアイテムを"未分類"というタイトルとし、ここを一時的にあなたのアイデアを吐き出す場とします。
+                            既にあたまの中にアイデアが一杯というのであれば忘れないうちに書き留めましょう。
+                        </p>
+                        <p class="text">
+                            続いてざっくりと文書を構造化します。まずは&lt;編集&gt;メニューから&lt;アイテムの追加&gt;を選択してください。
+                            "未分類"アイテムの下に新規アイテムが作られるので全体を好きに分類しましょう。
+                            ファイルの保存は<ファイル>メニューの<保存>で行います。
+                        </p>
+                        <div class="image">
+                            <p>
+                                <img data-original="img/create_outlines.png" alt="構造化作業中"/>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="subitem">
+                        <header>
+                            <h3 class="subsection-title">入力作業の効率化</h3>
+                        </header>
+                        <p class="text">
+                            ここで&lt;編集&gt;メニューの&lt;アイテムの挿入&gt;、&lt;アイテムの追加&gt;、
+                            &lt;アイテムを子として追加&gt;の動作の違いを確認してください。
+                            これらの違いを理解することで整理作業が効率的になります。
+                            また、アイテムはアイテムツリー内でドラッグアンドドロップが可能なので、
+                            多少の操作の間違いを気にする必要はありません。
+                        </p>
+                        <p class="text">
+                            そして出来るならそれらのショートカットキーも覚えてください。
+                            また、アイテムツリーの選択アイテムに対して<span class="shortcut-key">Enter</span>
+                            を入力すると、そのままタイトルを変更できることも覚えてください。
+                            このセクションの作業が<span class="shortcut-key">Ctrl+K (または Meta+K)</span>
+                            と<span class="shortcut-key">Enter</span>だけで効率的に行えることが分かるでしょう。
+                        </p>
+                        <p class="text">
+                            あなたにまだショートカットを覚える余力があるのなら<span class="shortcut-key">TAB</span>の存在も覚えてください。
+                            <span class="shortcut-key">TAB</span>を押すことでカルイカネのフォーカスは
+                            &lt;アイテムツリー&gt;、&lt;アイテムタイトル&gt;、&lt;アイテムテキスト&gt;、&lt;汎用領域&gt;を巡回します。
+                        </p>
+                        <p class="text">
+                            以上のことを覚えれば、あなたはキーボードからほとんど手を離さすことなくテキスト入力に集中できるでしょう。
+                        </p>
+                    </section>
+                    <section class="subitem">
+                        <header>
+                            <h3 class="subsection-title">階層付きテキスト</h3>
+                        </header>
+                        <p class="text">
+                            階層付きテキストという規格を知っているとさらに効率的に作業ができます。
+                            階層付きテキストは行の先頭にピリオド "." を付けることでタイトルを表現し、
+                            本文は次の行以降に記述します。
+                            行の先頭のピリオドの有無で前のアイテムとの境界を判断するため、
+                            アイテムを連続的に記述できます。
+                            また、ピリオドの数が階層を表現します。
+                        </p>
+                        <p class="text">
+                            階層付きテキストを知ることで、このセクションの作業も
+                            &lt;編集&gt;メニューの&lt;階層アイテムの追加&gt;によってさらに効率的に行えます。
+                            ただしピリオドを付けるのを忘れて意図しない結果となることも多いでしょう。
+                            その時は&lt;編集&gt;メニューの&lt;元に戻す&gt;で以前の状態に一度に戻せます。
+                        </p>
+                        <div class="small-image">
+                            <p>
+                                <img data-original="img/add-hierarchical-text.png" alt="階層付きテキストの入力"/>
+                            </p>
+                        </div>
+                    </section>
+                </section>
+                <section id="section04" class="section-item">
+                    <header class="section-header">
+                        <h2 class="section-title">テンプレートを使う</h2>
+                    </header>
+                    <section class="subitem">
+                        <header>
+                            <h3 class="subsection-title">はじめに</h3>
+                        </header>
+                        <p class="text">
+                            前回に続き省力化の話題となりますがカルイカネの様々なテンプレート機能を使うことでさらに効率的が可能になります。
+                        </p>
+                    </section>
+                    <section class="subitem">
+                        <header>
+                            <h3 class="subsection-title">スニペット（テキストの断片）</h3>
+                        </header>
+                        <p class="text">
+                            <アイテムタイトル>、<本文>、<属性> の入力フィールド内でコンテキストメニューを開きます。
+                            このコンテキストメニューは通常マウス操作によって開かれますが、
+                            カルイカネでは<span class="shortcut-key">Ctrl+M (または Meta+M)</span>でも可能です。
+                            &lt;スニペット&gt; から"copyright.txt"を選択してみましょう。
+                            入力フィールドに"Copyright (C) 2016 AUTHER All Rights Reserved."という文字列が追加されます。
+                        </p>
+                        <p class="text">
+                            この文字列の正体は <span class="path">KARUIKANE_HOME/snippets</span> の中にあるテキストファイルです。
+                            <span class="path">KARUIKANE_HOME</span> は&lt;ファイル&gt;メニューの&lt;インストール先を開く&gt;で開けます。
+                            ここに繰り返し使いたいテキストを<span class="path">.txt</span>の拡張子を付けて
+                            UTF-8 の文字コードで保存してください。ディレクトリで入れ子にしても構いません。
+                        </p>
+                        <div class="small-image">
+                            <p>
+                                <img data-original="img/snippets-menu.png" alt="スニペット（テキストの断片）"/>
+                            </p>
+                        </div>
+                        <p class="text">
+                            最後に、この機能は階層付きテキストの入力フィールドでも使えます。
+                            この機能を応用することで階層構造そのものがテンプレート化できるということです。
+                            現在の文書のアウトラインからスニペットを作りたい場合は、
+                            &lt;ファイル/エクスポート&gt;メニューの"printOutlines.js"が役立つでしょう。
+                        </p>
+                    </section>
+                </section>
+                <section id="section05" class="section-item">
+                    <header class="section-header">
+                        <h2 class="section-title">文書のエクスポート</h2>
+                    </header>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                </section>
+                <section id="section06" class="section-item">
+                    <header class="section-header">
+                        <h2 class="section-title">マクロを使う</h2>
+                    </header>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                </section>
+                <section id="section07" class="section-item">
+                    <header class="section-header">
+                        <h2 class="section-title">カルイカネの設定</h2>
+                    </header>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                </section>
+                <section id="section08" class="section-item">
+                    <header class="section-header">
+                        <h2 class="section-title">Tips</h2>
+                    </header>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                    <p>コンテンツ</p>
+                </section>
+            </div>
+            <footer id="footer">
+                <div class="copyright">
+                    Copyright &copy; 2016 busatasoft.net All Rights Reserved.
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script>
+        <script type="text/javascript" src="js/usage.js"></script>
+    </body>
+</html>
